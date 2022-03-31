@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="../" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="fisiotherapy, rehabilitation, telerehabilitation, diagnobot, biomechatronics" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Telerehabilitation system for upper limbs" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>FeasyTherapy - Telerehabilitation System</title>
+    <meta property="og:description" content="Telerehabilitation system for upper limbs" />
+    <meta property="og:title" content="FeasyTherapy - Telerehabilitation System" />
+    <meta property="og:image" content="images/swirl.png" />
+    <meta property="og:url" content="https://feasytherapy.com" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="css/exercise.css" />
+</head>
+<body>
+    <!-- BACKGROUND -->
+    <div id="background"></div>
+
+    <!-- CONTAINER -->
+    <div id="container">
+
+        <!-- MENU -->
+        <iframe id="iframe_menu" src="html/menu.html" scrolling="no" allow="autoplay"></iframe>
+
+        <!-- SESSION -->
+        <section class="session">
+            <!-- Label -->
+            <div id="patient_name_div">
+                <label id="patient_name_label">Jane Doe</label>
+            </div>
+
+            <!-- Chat -->
+            <div id="patient_chat_div">
+                <img src="images/patient.jpg" id="patient_chat_img" />
+            </div>
+
+            <!-- Chat Control -->
+            <div id="patient_chat_control_div">
+                <img id="patient_chat_control_end" src="images/session_call.png" />
+
+                <img class="patient_chat_control_img" id="patient_chat_control_speaker" src="images/session_volume.png" />
+
+                <img class="patient_chat_control_img" id="patient_chat_control_mic" src="images/session_mic.png" />
+
+                <img class="patient_chat_control_img" id="patient_chat_control_cam" src="images/session_cam.png" />
+            </div>
+
+            <!-- Hand Selection -->
+            <div id="patient_hand_div">
+                <div id="patient_left_hand_div">
+                    <img id="patient_left_hand_img" src="images/patient_left_hand.png" />
+
+                    <label id="patient_left_hand_label">Left Hand</label>
+                </div>
+
+                <div id="patient_right_hand_div">
+                    <img id="patient_right_hand_img" src="images/patient_right_hand_g.png" />
+
+                    <label id="patient_right_hand_label">Right Hand Selected</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXERCISE -->
+        <section class="exercise">
+            <!-- Game Screen -->
+            <div class="patient_game_screen_main_div">
+                <div class="patient_game_screen_label">
+                    <label>Patient Game Screen</label>
+                </div>
+
+                <div class="patient_game_screen_div">
+                    <img src="images/game.png" />
+                </div>
+            </div>
+
+            <!-- Exercise Management -->
+            <div class="exercise_management_div">
+                <div class="exercise_management_header_div">
+                    <img src="images/hr.png" />
+                    <label>Exercise Management</label>
+                </div>
+
+                <div class="exercise_table_div">
+                    <div class="exercise_table_left_div">
+                        <p>Exercise Mode</p>
+                        <select id="exercise_mode_select">
+                            <option value="isometric_option">Isometric</option>
+                            <option value="isotonic_option">Isotonic</option>
+                            <option value="isokinetic_option">Isokinetic</option>
+                            <option value="passive_option">Passive</option>
+                            <option value="active_option">Active</option>
+                            <option value="active_aided_option">Active Aided</option>
+                            <option value="stretching_option">Stretching</option>
+                        </select>
+
+                        <p>Motion Type</p>
+                        <select id="motion_type_select">
+                            <option value="flexion_extension_option">Flexion - Extension</option>
+                            <option value="ulnar_radial_deviation_option">Ulnar - Radial Deviation</option>
+                            <option value="pronation_supination_option">Pronation - Supination</option>
+                        </select>
+
+                        <p>Target Force</p>
+                        <input id="target_force_input" type="number" placeholder="Newtons" max="30" min="0" />
+
+                        <p>Target Position</p>
+                        <input id="target_position_input" type="number" placeholder="Degrees" max="90" min="0" />
+
+                        <p>Repeat</p>
+                        <input id="repeat_input" type="number" placeholder="Times" max="100" min="0" />
+
+                        <button id="start_button">START</button>
+                    </div>
+
+                    <div class="exercise_table_right_div">
+                        <div class="exercise_table_right_static_div">
+                            <label id="current_exercise_label">current exercise is<br /><b>isometric</b></label>
+                            <img src="images/isometric.png" />
+                        </div>
+
+                        <div class="exercise_table_right_static_div">
+                            <label id="current_motion_label">current motion type is<br /><b>flexion-extension</b></label>
+                            <img src="images/flexion-extension.png" />
+                        </div>
+
+                        <div class="exercise_table_right_static_div">
+                            <label id="target_force_label">target force is<br /><b>20 N</b></label>
+                            <img src="images/target_force.png" />
+                        </div>
+
+                        <div class="exercise_table_right_static_div">
+                            <label id="target_position_label">target position is<br /><b>60 degrees</b></label>
+                            <img src="images/target_position.png" />
+                        </div>
+
+                        <div class="exercise_table_right_static_div">
+                            <label id="target_repeat_label">target repeat is<br /><b>20 times</b></label>
+                            <img src="images/target_repeat.png" />
+                        </div>
+
+                        <button id="stop_button">STOP</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/exercise.js"></script>
+</body>
+</html>

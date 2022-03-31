@@ -1,0 +1,116 @@
+﻿body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+
+/* MENU */
+.menu {
+    flex: 22;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+    .menu .menu_list {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .menu .menu_list #menu_header {
+            flex: 1.5;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: solid;
+            border-right: solid;
+            border-top: none;
+            border-color: lightgray;
+            border-width: 1px;
+            padding-left: 10px;
+            background-color: white;
+        }
+
+            .menu .menu_list #menu_header #menu_options {
+                height: 30px;
+                width: 30px;
+                object-fit: contain;
+                pointer-events: all;
+                cursor: pointer;
+            }
+
+                .menu .menu_list #menu_header #menu_options:hover {
+                    filter: opacity(0.6) drop-shadow(0 0 0 black);
+                }
+
+                .menu .menu_list #menu_header #menu_options:active {
+                    filter: opacity(0.9) drop-shadow(0 0 0 black);
+                }
+
+            .menu .menu_list #menu_header #menu_physiotherapist {
+                flex: 3;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .menu .menu_list #menu_header #menu_physiotherapist #menu_physiotherapist_img {
+                    height: 60px;
+                    width: 60px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+
+                .menu .menu_list #menu_header #menu_physiotherapist #menu_physiotherapist_label {
+                    color: #5993CD;
+                    font-family: Tahoma;
+                    font-size: x-large;
+                    margin-right: 15px;
+                }
+
+        .menu .menu_list .menu_static_div {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: solid;
+            border-right: solid;
+            border-color: lightgray;
+            border-width: 1px;
+            padding-left: 10px;
+            pointer-events: all;
+            cursor: pointer;
+            background-color: white;
+        }
+
+            .menu .menu_list .menu_static_div:hover {
+                background-color: lightgray;
+            }
+
+            .menu .menu_list .menu_static_div:active {
+                background-color: darkgray;
+            }
+
+            .menu .menu_list .menu_static_div .menu_static_img {
+                height: 20px;
+                width: 20px;
+                object-fit: contain;
+                filter: opacity(0.6) drop-shadow(0 0 0 black);
+                pointer-events: none;
+                cursor: pointer;
+            }
+
+            .menu .menu_list .menu_static_div .menu_static_label {
+                color: #222222;
+                font-family: Tahoma;
+                font-size: large;
+                margin-left: 10px;
+                pointer-events: none;
+                cursor: pointer;
+            }
