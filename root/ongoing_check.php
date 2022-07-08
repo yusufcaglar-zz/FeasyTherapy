@@ -5,7 +5,7 @@ if (php_sapi_name() !== 'cli') {
 
 $host = 'localhost';
 $user = 'root';
-$pass = 'jx&Fs8fs?ts)xxR';
+$pass = '???';
 $db = 'feasytherapy';
 $conn;
 
