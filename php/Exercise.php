@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$operation = $data -> operation;
 			$password = $data -> password;
 			
-			if (hash_equals("!Fsc%vA>vtD5qahh", $password)) {
+			if (hash_equals("???", $password)) {
 				//createSession
 				if ($operation === 'createSession') {
 					$physiotherapist_id = $data -> physiotherapist_id;
