@@ -2,7 +2,7 @@
 class DBOperations {
 	private $host = 'localhost';
 	private $user = 'root';
-	private $pass = 'jx&Fs8fs?ts)xxR';
+	private $pass = '???';
 	private $db = 'feasytherapy';
 	private $conn;
 
