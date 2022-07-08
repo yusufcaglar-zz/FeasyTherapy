@@ -55,7 +55,7 @@ io.on("connection", socket => {
             operation: "createSession",
             physiotherapist_id: physiotherapistId,
             patient_id: patientId,
-            password: "!Fsc%vA>vtD5qahh"
+            password: "???"
         });
 
         const headers = { 'Content-Type': 'application/json' };
@@ -103,7 +103,7 @@ io.on("connection", socket => {
                 receiverId: room.receiverId,
                 anon_name: room.senderUsername,
                 anon_ip: room.senderOnline ? room.senderId : room.senderIp,
-                password: "!Fsc%vA>vtD5qahh"
+                password: "???"
             });
 
             post(data);
@@ -164,7 +164,7 @@ io.on("connection", socket => {
                     var data = JSON.stringify({
                         operation: "nullToken",
                         token: rooms[i].receiverSocket,
-                        password: "!Fsc%vA>vtD5qahh"
+                        password: "???"
                     });
 
                     post(data);
@@ -177,7 +177,7 @@ io.on("connection", socket => {
                     operation: "endConversation",
                     receiver: rooms[i].receiverId,
                     sender: rooms[i].senderId,
-                    password: "!Fsc%vA>vtD5qahh"
+                    password: "???"
                 });
 
                 post(data);
@@ -189,7 +189,7 @@ io.on("connection", socket => {
             var data = JSON.stringify({
                 operation: "nullToken",
                 token: socket.id,
-                password: "!Fsc%vA>vtD5qahh"
+                password: "???"
             });
 
             post(data);
@@ -232,7 +232,7 @@ function post(data) {
             isOnline: isOnline,
             receiver: room.receiverId,
             sender: room.senderId,
-            password: "!Fsc%vA>vtD5qahh"
+            password: "???"
         });
 
         const options = {
