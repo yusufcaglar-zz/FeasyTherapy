@@ -1,0 +1,78 @@
+﻿body {
+    width: 100vw;
+    height: 100vh;
+    min-width: var(--body-min-width);
+    min-height: var(--body-min-height);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+/* BACKGROUND */
+#background {
+    background-color: #f1f3f4;
+    height: 100%;
+    width: 100vw;
+    min-width: var(--body-min-width);
+    min-height: var(--body-min-height);
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    z-index: -500;
+}
+
+/* CONTAINER */
+#container {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* MENU */
+#iframe_menu {
+    flex: 22;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    border-right: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+/* SERVER */
+#iframe_server {
+    flex: 78;
+    height: 100vh;
+    min-width: var(--body-min-width);
+    min-height: var(--body-min-height);
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+/* SCROLLBAR */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: dimgrey;
+}
+
+    *::-webkit-scrollbar-thumb:hover {
+        background-color: #444;
+    }
+
+*::-webkit-scrollbar-corner {
+    background-color: lightgray;
+}

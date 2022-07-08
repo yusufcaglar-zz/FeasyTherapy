@@ -1,0 +1,14 @@
+<html>
+<body>
+	<script type="text/javascript">
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', '/page/encode2.py', true);
+		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		xhr.send();
+
+		xhr.onload = function () {
+			console.log(this.response);
+		}
+	</script>
+</body>
+</html>

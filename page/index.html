@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="fisiotherapy, rehabilitation, telerehabilitation, diagnobot, biomechatronics" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Telerehabilitation system for upper limbs" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>FeasyTherapy - Telerehabilitation System</title>
+    <meta property="og:description" content="Telerehabilitation system for upper limbs" />
+    <meta property="og:title" content="FeasyTherapy - Telerehabilitation System" />
+    <meta property="og:image" content="images/swirl.png" />
+    <meta property="og:url" content="https://feasytherapy.com" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <img src="images/logo.png" />
+
+        <div id="login_options">
+            <label id="login_as">Login as</label>
+            <label id="option_1">Patient</label>
+            <label style="color: dodgerblue; font-weight: bold;">|</label>
+            <label id="option_2">Admin</label>
+        </div>
+    </header>
+
+    <!-- BACKGROUND IMAGE -->
+    <div id="mask"></div>
+    <div id="background_image"></div>
+
+    <!-- SECTION -->
+    <section>
+        <div id="login_div">
+            <img src="images/swirl.png" />
+            <label id="login_identity">Physiotherapist Login</label>
+            <input id="login_id" type="text" placeholder="id number" />
+            <input id="login_password" type="password" placeholder="password" />
+            <button id="login_button">LOGIN</button>
+            <div id="error_label"></div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

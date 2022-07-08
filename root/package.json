@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "socket.io": "^4.5.1"
+  },
+  "name": "feasytherapy",
+  "version": "1.0.0",
+  "description": "Telerehabilitation System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "YTU Biomechatronics Lab",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

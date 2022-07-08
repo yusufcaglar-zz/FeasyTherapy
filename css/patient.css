@@ -1,0 +1,34 @@
+﻿body {
+    width: 100vw;
+    height: 100vh;
+    min-width: var(--body-min-width);
+    min-height: var(--body-min-height);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+/* BACKGROUND */
+#background {
+    background-color: #f1f3f4;
+    height: 100%;
+    width: 100%;
+    min-width: var(--body-min-width);
+    min-height: var(--body-min-height);
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    z-index: -500;
+}
+
+/* SERVER */
+#iframe_server {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    min-width: var(--body-min-width);
+    min-height: var(--body-min-height);
+    border: none;
+}
